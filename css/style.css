@@ -1,0 +1,35 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #402d4d;
+    color: #ffffff;
+}
+
+
+nav{
+    display: flex;
+    align-items: center;
+      background: linear-gradient(to bottom, #463450, #4b3957, #402d4d);
+    padding: 10px 200px;
+}
+
+#logo-nav{
+  height: 50px;
+  margin-right: 20px; /* separa del resto de los enlaces */
+  margin-top: 10px;   /* lo baja un poco si está pegado arriba */
+}
+
+
+
+a{
+    text-decoration: none;
+}
+
+.nav-item{
+    margin-right: 20px;
+    margin-top: 10px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    padding: 0px 20px;
+}
