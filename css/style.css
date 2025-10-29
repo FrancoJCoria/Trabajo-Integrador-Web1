@@ -20,7 +20,9 @@ nav{
   margin-top: 10px;   /* lo baja un poco si está pegado arriba */
 }
 
-
+.nav-item:hover{
+    font-size: 20px;
+}
 
 a{
     text-decoration: none;
