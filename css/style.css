@@ -2,7 +2,7 @@ body{
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #402d4d;
+    background-color: #1f1a22;
     color: #ffffff;
 }
 
@@ -10,7 +10,7 @@ body{
 nav{
     display: flex;
     align-items: center;
-      background: linear-gradient(to bottom, #463450, #4b3957, #402d4d);
+      background: linear-gradient(to bottom, #32233a, #271d2e, #1f1a22);
     padding: 10px 200px;
 }
 
