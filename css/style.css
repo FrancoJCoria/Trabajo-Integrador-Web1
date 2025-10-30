@@ -35,3 +35,24 @@ a{
     font-weight: bold;
     padding: 0px 20px;
 }
+
+.carrousel{
+    width: 75%;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-left: 10%;
+}
+.carrousel-contenedor{
+    display: flex;
+    width:100%;
+    animation: deslizar 15s infinite;
+}
+
+.carrousel-imagen{
+    width: calc(100% / 3.15);
+    flex-shrink: 0;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.
