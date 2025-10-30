@@ -1,4 +1,4 @@
-body{
+body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -7,28 +7,30 @@ body{
 }
 
 
-nav{
+nav {
     display: flex;
     align-items: center;
-      background: linear-gradient(to bottom, #32233a, #271d2e, #1f1a22);
+    background: linear-gradient(to bottom, #32233a, #271d2e, #1f1a22);
     padding: 10px 200px;
 }
 
-#logo-nav{
-  height: 50px;
-  margin-right: 20px; /* separa del resto de los enlaces */
-  margin-top: 10px;   /* lo baja un poco si está pegado arriba */
+#logo-nav {
+    height: 50px;
+    margin-right: 20px;
+    /* separa del resto de los enlaces */
+    margin-top: 10px;
+    /* lo baja un poco si está pegado arriba */
 }
 
-.nav-item:hover{
+.nav-item:hover {
     font-size: 20px;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-.nav-item{
+.nav-item {
     margin-right: 20px;
     margin-top: 10px;
     color: rgb(255, 255, 255);
@@ -36,23 +38,50 @@ a{
     padding: 0px 20px;
 }
 
-.carrousel{
-    width: 75%;
+/* Estilos para el carrusel */
+.carrousel {
+    width: 40%;
     overflow: hidden;
     margin-top: 20px;
-    margin-left: 10%;
-}
-.carrousel-contenedor{
-    display: flex;
-    width:100%;
-    animation: deslizar 15s infinite;
+    margin-left: 30%;
+    position: relative; /*Utilizamos position relative para darle un punto de referencia para saber respecto a qué se va a posicionar*/
 }
 
-.carrousel-imagen{
-    width: calc(100% / 3.15);
-    flex-shrink: 0;
+.carrousel-contenedor {
+    margin-top: 50px;
+    display: flex;
+    width: 100%;
+    animation: deslizar 15s infinite;
+     transition: transform 0.5s ease;
+}
+
+.carrousel-imagen {
+    width: calc(100% / 3.25);
     border-radius: 20px;
     padding: 10px;
 }
 
-.
+.carrousel-boton {
+    position: absolute; /*Utilizamos position absolute para posicionar los botones respecto al contenedor del carrusel*/
+    top: 55%;
+    transform: translateY(-50%);
+    background-color: rgba(2, 2, 2, 0.5);
+    border: none;
+    color: white;
+    font-size: 10px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.carrousel-boton:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.carrousel-boton.anterior {
+    left: 10px;
+}
+
+.carrousel-boton.siguiente {
+    right: 10px;
+}
