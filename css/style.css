@@ -40,10 +40,10 @@ a {
 
 /* Estilos para el carrusel */
 .carrousel {
-    width:100%;
+    width: 60%;
     overflow: hidden;
     margin-top: 20px;
-    margin-left: 30%;
+    margin-left: 20%;
     position: relative; /*Utilizamos position relative para darle un punto de referencia para saber respecto a qué se va a posicionar*/
 }
 
@@ -55,7 +55,7 @@ a {
 }
 
 .carrousel-imagen {
-    width: calc(100% / 3.25);
+    width: calc(100% / 3.15);
     border-radius: 20px;
     padding: 10px;
 }
