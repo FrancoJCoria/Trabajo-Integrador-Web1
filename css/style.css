@@ -44,14 +44,14 @@ a {
     overflow: hidden;
     margin-top: 20px;
     margin-left: 20%;
-    position: relative; /*Utilizamos position relative para darle un punto de referencia para saber respecto a qué se va a posicionar*/
+    position: relative;
+    /*Utilizamos position relative para darle un punto de referencia para saber respecto a qué se va a posicionar*/
 }
 
 .carrousel-contenedor {
     margin-top: 50px;
     display: flex;
     width: 100%;
-    animation: deslizar 15s infinite;
 }
 
 .carrousel-imagen {
@@ -61,7 +61,8 @@ a {
 }
 
 .carrousel-boton {
-    position: absolute; /*Utilizamos position absolute para posicionar los botones respecto al contenedor del carrusel*/
+    position: absolute;
+    /*Utilizamos position absolute para posicionar los botones respecto al contenedor del carrusel*/
     top: 55%;
     transform: translateY(-50%);
     background-color: rgba(2, 2, 2, 0.5);
@@ -83,4 +84,34 @@ a {
 
 .carrousel-boton.siguiente {
     right: 10px;
+}
+
+.reseñas {
+    /* Estilos para el carrusel */
+
+    width: 58%;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-left: 20%;
+    position: relative;
+    /*Utilizamos position relative para darle un punto de referencia para saber respecto a qué se va a posicionar*/
+    display: flex;
+}
+
+.reseña-item {
+    margin: 0 10px;
+    background-color: #1b1a1d;
+    border-radius: 10px;
+
+}
+
+.reseña-item h2 {
+    color: #ffcc00;
+    padding: 0;
+}
+
+.reseña-info p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #ffffff;
 }
