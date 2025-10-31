@@ -1,34 +1,50 @@
 // js/carrousel.js
-document.addEventListener("DOMContentLoaded", () => {
-    const contenedor = document.getElementById("carrouselContenedor");
-    const imagenes = Array.from(document.querySelectorAll(".carrousel-imagen"));
-    const btnSiguiente = document.querySelector(".carrousel-boton.siguiente");
-    const btnAnterior = document.querySelector(".carrousel-boton.anterior");
+    let index = 0;
+    let imagenes = [
+        "./img/fantastic_beasts_the_crimes_of_grindelwald_ver20.jpg",
+        "./img/mission_impossible__fallout.jpg",
+        "./img/ready_player_one_ver2.jpg",
+        "./img/scream_seven.jpg",
+        "./img/dead_mans_wire.jpg",
+        "./img/frontier_crucible.jpg",
+        "./img/alien_romulus_ver2.jpg",
+        "./img/black_phone_two.jpg",
+        "./img/late_night_with_the_devil_ver2.jpg",
+        "./img/tron_ares_ver2.jpg",
+        "./img/twenty_eight_years_later.jpg",
+        "./img/one_battle_after_another_ver10.jpg"
+    ]
+    let imgSlot1 = document.getElementById("img-slot-1");
+    let imgSlot2 = document.getElementById("img-slot-2");
+    let imgSlot3 = document.getElementById("img-slot-3");
+    let totalImages = imagenes.length;
+    let botonSiguiente = document.querySelector(".carrousel-boton.siguiente");
+    let botonAnterior = document.querySelector(".carrousel-boton.anterior");
 
+    function actualizarImagenes() {
+        imgSlot1.src = imagenes[index % totalImages];
+        imgSlot2.src = imagenes[(index + 1) % totalImages];
+        imgSlot3.src = imagenes[(index + 2) % totalImages];
+    }
 
-    const imagenesPorPaso = 3; // <-- cuántas imágenes querés mover por clic
-    let indice = 0;            // índice de la imagen visible más a la izquierda
+    function siguienteImagen() {
+        index=index+3;
 
-
-    btnSiguiente.addEventListener("click", () => {
-        if (indice < imagenes.length - imagenesPorPaso) {
-            indice += imagenesPorPaso;
-        } else {
-            indice = 0; // vuelve al inicio
+        if (index >= totalImages) {
+            index = 0;
         }
-        contenedor.style.transform = `translateX(-${(100 / imagenesPorPaso) * indice}%)`;
-    });
+        actualizarImagenes();
 
-
-    btnAnterior.addEventListener("click", () => {
-        if (indice > 0) {
-            indice -= imagenesPorPaso;
-            contenedor.style.transform = `translateX(-${(100 / imagenesPorPaso) * indice}%)`;
-        } else {
-            indice = imagenes.length - imagenesPorPaso; // va al final
-            contenedor.style.transform = `translateX(-${(100 / imagenesPorPaso) * indice}%)`;
+    }
+    function anteriorImagen() {
+        index=index-3;
+        if (index < 0) {
+            index = totalImages - (totalImages % 3 || 3);
         }
-    });
+        actualizarImagenes();
+    }
+
+    botonSiguiente.addEventListener("click", siguienteImagen);
+    botonAnterior.addEventListener("click", () => anteriorImagen());
 
 
-});
