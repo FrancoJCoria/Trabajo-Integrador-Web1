@@ -112,3 +112,42 @@ a {
     line-height: 1.6;
     color: #ffffff;
 }
+
+/*Estilos para las Curiosidades*/
+h1 {
+    text-align: center;
+    margin-top: 100px;
+    color: #f12929;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+.curiosidades-contenedor h2 {
+    color: #4b0c0c;
+    margin-top: 100px;
+}
+
+.curiosidad-pelicula-1 h2 {
+    margin-top: 10px;
+    color: #f47357;
+}
+
+
+.curiosidad-pelicula-1 {
+    display: flex;
+    justify-content: center;
+}
+
+.curiosidad-item {
+    text-align: center;
+    white-space: nowrap;
+    background-color: #1b1a1d;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
