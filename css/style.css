@@ -1,35 +1,36 @@
-body{
+body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #1f1a22;
+    background-color: #000000;
     color: #ffffff;
 }
 
 
-nav{
+nav {
     display: flex;
     align-items: center;
-      background: linear-gradient(to bottom, #32233a, #271d2e, #1f1a22);
-    padding: 10px 200px;
+    background: linear-gradient(to bottom, #272229, #1b1a1d, #000000);
+    padding: 10px;
+    padding-left: 10%;
 }
 
-#logo-nav{
-  height: 50px;
-  margin-right: 20px; /* separa del resto de los enlaces */
-  margin-top: 10px;   /* lo baja un poco si está pegado arriba */
+#logo-nav {
+    height: 50px;
+    margin-right: 20px;
+    margin-top: 10px;
 }
 
-.nav-item:hover{
+.nav-item:hover {
     font-size: 20px;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-.nav-item{
-    margin-right: 20px;
+.nav-item {
+    margin-right: 10px;
     margin-top: 10px;
     color: rgb(255, 255, 255);
     font-weight: bold;
