@@ -35,3 +35,48 @@ a{
     font-weight: bold;
     padding: 0px 20px;
 }
+
+/* Estilos para el carrusel */
+.carrousel {
+    margin: auto;
+}
+
+.carrousel-contenedor {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.carrousel-imagen {
+    border-radius: 20px;
+    padding: 10px;
+    width: 350px;
+    height: auto;
+
+
+}
+
+.carrousel-boton {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    background-color: rgba(2, 2, 2, 0.5);
+    border: none;
+    color: white;
+    font-size: 10px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.carrousel-boton:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.carrousel-boton.anterior {
+    left: 300px;
+}
+
+.carrousel-boton.siguiente {
+    right: 300px;
+}
