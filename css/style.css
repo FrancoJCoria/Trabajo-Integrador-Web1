@@ -164,8 +164,9 @@ h2 {
 }
 
 .curiosidad-pelicula-fila-1{
-    display: grid;
-    justify-content: start;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
 }
 
 .curiosidad-pelicula-fila-1 h2 {
@@ -188,8 +189,10 @@ h2 {
 }
 
 .curiosidad-pelicula-fila-2{
-    display: grid;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
 }
 .curiosidad-pelicula-fila-2 h2 {
     margin-top: 10px;
@@ -205,8 +208,10 @@ h2 {
 }
 
 .curiosidad-pelicula-fila-3{
-    display: grid;
-    justify-content: end;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+
 }
 
 .curiosidad-pelicula-fila-3 h2 {
