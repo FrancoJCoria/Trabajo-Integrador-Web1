@@ -116,7 +116,8 @@ a {
 /*Estilos para las Curiosidades*/
 h1 {
     text-align: center;
-    margin-top: 100px;
+    margin-top: 150px;
+    margin-bottom: 100px;
     color: #f12929;
 }
 
@@ -126,18 +127,19 @@ h2 {
 }
 
 
-.curiosidades-contenedor h2 {
+.titulo-pelicula-columnas {
     color: #4b0c0c;
-    margin-top: 100px;
+    margin-top: 200px;
 }
 
-.curiosidad-pelicula-1 h2 {
+
+.curiosidad-pelicula h2 {
     margin-top: 10px;
     color: #f47357;
 }
 
 
-.curiosidad-pelicula-1 {
+.curiosidad-pelicula {
     display: flex;
     justify-content: center;
 }
@@ -150,4 +152,64 @@ h2 {
     padding: 20px;
     margin: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.curiosidad-item2{
+    text-align: center;
+    background-color: #1b1a1d;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 30px 30px;
+    padding: 20px;
+}
+
+.curiosidad-pelicula-fila-1{
+    display: grid;
+    justify-content: start;
+}
+
+.curiosidad-pelicula-fila-1 h2 {
+    margin-top: 10px;
+    color: #f47357;
+}
+
+.titulo-pelicula-filas-1{
+    margin-top: 200px;
+    text-align: start;
+    margin-left: 180px;
+    color: #4b0c0c;
+
+}
+
+.titulo-pelicula-filas-2{
+    margin-top: 200px;
+    text-align: center;
+    color: #4b0c0c;
+}
+
+.curiosidad-pelicula-fila-2{
+    display: grid;
+    justify-content: center;
+}
+.curiosidad-pelicula-fila-2 h2 {
+    margin-top: 10px;
+    color: #f47357;
+}
+
+
+.titulo-pelicula-filas-3{
+    margin-top: 200px;
+    text-align: end;
+    margin-right: 135px;
+    color: #4b0c0c;
+}
+
+.curiosidad-pelicula-fila-3{
+    display: grid;
+    justify-content: end;
+}
+
+.curiosidad-pelicula-fila-3 h2 {
+    margin-top: 10px;
+    color: #f47357;
 }
