@@ -154,7 +154,7 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.curiosidad-item2{
+.curiosidad-item2 {
     text-align: center;
     background-color: #1b1a1d;
     border-radius: 10px;
@@ -163,10 +163,10 @@ h2 {
     padding: 20px;
 }
 
-.curiosidad-pelicula-fila-1{
-  display: flex;
-  flex-direction: column;
-  align-items: start;
+.curiosidad-pelicula-fila-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
 }
 
 .curiosidad-pelicula-fila-1 h2 {
@@ -174,7 +174,7 @@ h2 {
     color: #f47357;
 }
 
-.titulo-pelicula-filas-1{
+.titulo-pelicula-filas-1 {
     margin-top: 200px;
     text-align: start;
     margin-left: 180px;
@@ -182,32 +182,33 @@ h2 {
 
 }
 
-.titulo-pelicula-filas-2{
+.titulo-pelicula-filas-2 {
     margin-top: 200px;
     text-align: center;
     color: #4b0c0c;
 }
 
-.curiosidad-pelicula-fila-2{
+.curiosidad-pelicula-fila-2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-   
+
 }
+
 .curiosidad-pelicula-fila-2 h2 {
     margin-top: 10px;
     color: #f47357;
 }
 
 
-.titulo-pelicula-filas-3{
+.titulo-pelicula-filas-3 {
     margin-top: 200px;
     text-align: end;
     margin-right: 135px;
     color: #4b0c0c;
 }
 
-.curiosidad-pelicula-fila-3{
+.curiosidad-pelicula-fila-3 {
     display: flex;
     flex-direction: column;
     align-items: end;
@@ -217,4 +218,115 @@ h2 {
 .curiosidad-pelicula-fila-3 h2 {
     margin-top: 10px;
     color: #f47357;
+}
+
+/* --- Contenedor principal --- */
+.contacto-contenedor {
+  background: linear-gradient(to bottom, #222121, #1f1e1e, #080808);
+  padding: 30px 40px;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 400px;
+  margin: 50px auto; /* centra horizontalmente */
+  box-shadow: 0 0 10px rgba(196, 22, 22, 0.4); /* 👈 tono rojo */;
+}
+
+.contacto-contenedor h1 {
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 20px;
+  margin-top: 0px;
+}
+
+/* --- Formulario --- */
+#contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact-form h2 {
+  color: #ffffff;
+  font-size: 1.1em;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+/* --- Campos de entrada --- */
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+/* --- Para el checkbox --- */
+.item.row {
+  flex-direction: row;
+  align-items: center;
+}
+
+.item.row input[type="checkbox"] {
+  margin-right: 10px; /* separa el checkbox del texto */
+}
+
+label {
+  font-size: 0.95em;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+/* --- Inputs --- */
+.input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1em;
+  transition: border-color 0.2s;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #d62b2b;
+}
+
+/* --- Botón de envío --- */
+.center {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.center button {
+  background-color: #cf1010;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 25px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: back
+
+}
+
+
+#resultado {
+    color: white;
+    text-align:center;
+    background-color: green;
+    border-radius: 8px
+}
+
+
+footer {
+    background-color: #440d0d;
+    color: white;         
+    padding: 1rem 0;       
+    text-align: center;    
+    margin-top: 10rem;      
+}
+
+
+footer p {
+    margin: 10px;
+    font-size: 0.9rem; 
 }

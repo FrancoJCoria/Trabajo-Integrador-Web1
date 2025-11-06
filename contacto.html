@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Contacto</title>
+    <link rel="icon" href="img/logo.png">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a id="logo-nav" href="index.html"><img src="img/logo.png" alt="Cineverso Logo" style="height:50px;"></a>
+            <a class="nav-item" href="index.html">Inicio</a>
+            <a class="nav-item" href="curiosidades.html">Curiosidades</a>
+            <a class="nav-item" href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <div class="contacto-contenedor">
+
+        <h1>Contactame!</h1>
+
+        <form id="contact-form" action="" novalidate onsubmit="return validarFormulario()">
+            <h2>Mis datos</h2>
+            <div class="item">
+                <label for="username">*Nombre de usuario:</label>
+                <input class="input" type="text" id="username" name="username" required>
+            </div>
+            <div class="item">
+                <label for="birthday">Fecha de cumpleaños:</label>
+                <input class="input" type="date" id="birthday" name="birthday" min="1900-01-01" max="2024-12-31">
+            </div>
+            <div class="item">
+                <label for="email">*Correo electrónico:</label>
+                <input class="input" type="email" id="email" name="email" required>
+            </div>
+            <div class="item">
+                <label for="password">*Contraseña:</label>
+                <input class="input" type="password" id="password" name="password" required>
+            </div>
+            <div class="item">
+                <label for="confirm-password">*Confirmar contraseña:</label>
+                <input class="input" type="password" id="confirm-password" name="confirm-password" required>
+            </div>
+            <div class="item row">
+                <input class="input" type="checkbox" id="terms" name="terms" required>
+                <label for="terms">*Acepto términos y condiciones</label>
+            </div>
+            <div class="center">
+                <button type="submit">Registrarse</button>
+            </div>
+        </form>
+        <br>
+    </div>
+    <div id="resultado-contenedor">
+        <p id="resultado"></p>
+    </div>
+
+    <script>
+        function validarFormulario() {
+            let username = document.getElementById("username").value;
+            let birthday = document.getElementById("birthday").value;
+            let email = document.getElementById("email").value;
+            let password = document.getElementById("password").value;
+            let confirmPassword = document.getElementById("confirm-password").value;
+            let terminos = document.getElementById("terms");
+            const usernamePattern = /^.{10,20}$/;
+            const emailPattern = /^.+@.+\..+$/;
+            const passwordPattern = /^.{9,}$/;
+            if (username && !usernamePattern.test(username)) {
+                alert("Debe ingresar un nombre de usuario valido");
+                return false;
+            } else if (username && !emailPattern.test(email)) {
+                alert("Debe ingresar un email valido");
+                return false;
+            } else if (username && !passwordPattern.test(password)) {
+                alert("Debe ingresar una contraseña valida");
+                return false;
+            } else if (!terminos.checked) {
+                alert("Debe aceptar los terminos");
+                return false;
+            } else if (password !== confirmPassword) {
+                alert("Las contraseñas deben ser iguales");
+                return false;
+            }
+            let contenedorResultado = document.getElementById("resultado-contenedor");
+            contenedorResultado.style.padding = "3px";
+            contenedorResultado.style.borderRadius = "8px";
+            contenedorResultado.style.marginLeft = "200px";
+            contenedorResultado.style.marginRight = "200px";
+            contenedorResultado.style.backgroundColor = "green";
+            let mensaje = " Usuario " + username + " con email " + email + " creado con éxito!";
+            document.getElementById("resultado").textContent = mensaje;
+            return false;
+
+
+        }
+    </script>
+
+    <footer>
+        <p>&copy; 2025 Cineverso. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
